@@ -110,17 +110,16 @@ export const products: Product[] = [
 export const productDetails: Record<number, ProductDetails> = {
   1: {
     images: ["/earthy-warm-abstract-organic.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Maanläheiset lämpimät sävyt",
       "Orgaaniset virtaavat muodot",
-      "Luo rauhallisen tunnelman",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -132,17 +131,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   2: {
     images: ["/organic-botanical-warm-tones.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Kasviaiheinen abstraktio",
       "Lämpimät ruskeat ja oranssit sävyt",
-      "Orgaaniset lehtimuodot",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -154,17 +152,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   3: {
     images: ["/bold-geometric-vibrant-retro.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Rohkeat geometriset muodot",
       "Eloisat retro-värit",
-      "70-luvun inspiraatio",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -176,17 +173,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   4: {
     images: ["/dynamic-bold-circular-modern.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Dynaamiset ympyrämuodot",
       "Moderni abstrakti tyyli",
-      "Rohkeat värit ja kaaret",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -198,17 +194,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   5: {
     images: ["/yoshino-mountain-cherry-blossom.webp"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Japanilainen vintage-juliste",
       "Kirsikankukat ja vuorimaisema",
-      "Ajaton matkajuliste-tyyli",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -220,17 +215,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   6: {
     images: ["/warm-sunset-geometric-abstract.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Lämmin geometrinen abstraktio",
       "Auringonlaskun väripaletti",
-      "Vintage-tyylinen kompositio",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -242,17 +236,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   7: {
     images: ["/green-flowers-quirky-text-art.webp"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Leikkisä moderni taide",
       "Vihreät käsinpiirretyt kukat",
-      "Hauska tekstitaide",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -264,17 +257,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   8: {
     images: ["/retro-colorful-geometric-shapes.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Värikäs retro-abstraktio",
       "Geometriset muodot",
-      "Eloisat värit",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -286,17 +278,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   9: {
     images: ["/modern-bold-overlapping-abstract.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Moderni abstrakti taide",
       "Päällekkäiset muodot",
-      "Rohkeat värit",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -308,17 +299,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   10: {
     images: ["/calm-minimalist-soft-shapes.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Rauhallinen minimalismi",
       "Pehmeät muodot",
-      "Harmoninen kokonaisuus",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -330,17 +320,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   11: {
     images: ["/soft-minimalist-neutral-circles.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Pehmeät ympyrämuodot",
       "Neutraalit pastellisävyt",
-      "Minimalistinen eleganssi",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -352,17 +341,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   12: {
     images: ["/vintage-terracotta-warm-abstract.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Vintage-tyylinen kompositio",
       "Lämpimät terrakottasävyt",
-      "Orgaaniset ja geometriset muodot",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
@@ -374,17 +362,16 @@ export const productDetails: Record<number, ProductDetails> = {
   },
   13: {
     images: ["/vibrant-colorful-geometric-retro.avif"],
-    materials: "Laadukas mattapintainen julistepaperi, 200g/m²",
+    materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
-    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä lasin taakse.",
-    shipping:
-      "Ilmainen toimitus yli 40€ ostoksiin. Toimitus Suomeen 3-5 arkipäivää. Pakattu huolellisesti suojaputkeen.",
+    care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
+    shipping: "Ilmainen toimitus kaikkiin maihin. Toimitus 2-4 viikkoa. Pakattu huolellisesti suojaputkeen.",
     features: [
-      "Korkealaatuinen mattapintainen paperi",
+      "Laadukas puuvillakangas",
+      "Ympäristöystävällinen Giclee-muste",
+      "Rullalle rullattu kangas ilman kehystä",
       "Rohkeat eloisat värit",
       "Geometriset retro-muodot",
-      "Energinen kompositio",
-      "Tulostettu Suomessa",
     ],
     sizes: [
       { name: "20x30 cm", dimensions: "20 x 30 cm", price: "12,90 €", priceInCents: 1290 },
