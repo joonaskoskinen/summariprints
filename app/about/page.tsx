@@ -46,8 +46,8 @@ export default function AboutPage() {
               </p>
               <p>
                 Jokainen kokoelmaamme päätyvä juliste käy läpi tiukan laaduntarkastuksen. Etsimme jatkuvasti uusia,
-                ainutlaatuisia designeja, jotka yhdistävät tyylin, laadun ja kohtuullisen hinnan. Kaikki julisteemme
-                tulostetaan Suomessa laadukkaalle mattapintaiselle paperille.
+                ainutlaatuisia designeja, jotka yhdistävät tyylin, laadun ja kohtuullisen hinnan. Kaikki tuotteemme
+                toimitetaan huolellisesti pakattuina suoraan sinulle.
               </p>
             </div>
           </div>
@@ -119,8 +119,8 @@ export default function AboutPage() {
               <div className="border-l-4 border-accent pl-6 py-2">
                 <h3 className="font-semibold text-lg mb-2">Laadukkaat Printit</h3>
                 <p className="text-muted-foreground">
-                  Kaikki julisteemme tulostetaan Suomessa laadukkaalle mattapintaiselle paperille. Jokainen juliste
-                  tarkastetaan ennen kuin se lähetetään sinulle.
+                  Kaikki julisteemme ovat laadukkaita puuvillakangasprinttejä ympäristöystävällisellä Giclee-musteella.
+                  Jokainen juliste tarkastetaan ennen kuin se lähetetään sinulle.
                 </p>
               </div>
 
@@ -132,10 +132,10 @@ export default function AboutPage() {
               </div>
 
               <div className="border-l-4 border-accent pl-6 py-2">
-                <h3 className="font-semibold text-lg mb-2">Ilmainen Palautus</h3>
+                <h3 className="font-semibold text-lg mb-2">Ilmainen Toimitus</h3>
                 <p className="text-muted-foreground">
-                  Tarjoamme 14 päivän palautusoikeuden. Jos tuote ei vastaa odotuksiasi, voit palauttaa sen
-                  vaivattomasti.
+                  Tarjoamme ilmaisen toimituksen kaikkiin maihin. Jos tuote ei vastaa odotuksiasi, voit palauttaa sen 14
+                  päivän kuluessa.
                 </p>
               </div>
             </div>
