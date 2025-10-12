@@ -22,11 +22,22 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     return {}
   }
 
+  // Get product name from translations (using Finnish as default)
+  const productNames: Record<number, string> = {
+    1: "Kristallipisara",
+    2: "Sydämen Romanssi",
+    3: "Kerrostettu Eleganssi",
+  }
+
+  const productName = productNames[productId] || product.name
+
   return generateSEO({
-    title: product.name,
-    description: details.description,
+    title: productName,
+    description: details.materials,
     image: details.images[0],
     url: `https://summari.fi/product/${productId}`,
+    type: "product",
+    price: product.price,
   })
 }
 
@@ -39,9 +50,17 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     notFound()
   }
 
+  const productNames: Record<number, string> = {
+    1: "Kristallipisara",
+    2: "Sydämen Romanssi",
+    3: "Kerrostettu Eleganssi",
+  }
+
+  const productName = productNames[productId] || product.name
+
   const schema = generateProductSchema({
-    name: product.name,
-    description: details.description,
+    name: productName,
+    description: details.materials,
     image: details.images[0],
     price: product.price,
     currency: "EUR",
@@ -54,7 +73,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
       <Header />
       <main className="min-h-screen">
         <div className="container mx-auto px-4 md:px-6">
-          <Breadcrumbs items={[{ label: "Tuotteet", href: "/#tuotteet" }, { label: product.name }]} />
+          <Breadcrumbs items={[{ label: "Tuotteet", href: "/#tuotteet" }, { label: productName }]} />
         </div>
         <ProductPageClient product={product} details={details} />
       </main>
