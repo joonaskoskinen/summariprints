@@ -5,6 +5,8 @@ import { ChevronLeft } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { useLanguage } from "@/contexts/language-context"
+import { generateFAQSchema } from "@/lib/seo"
+import { useEffect } from "react"
 
 export function FAQClient() {
   const { language } = useLanguage()
@@ -12,9 +14,9 @@ export function FAQClient() {
   const faqData = {
     fi: [
       {
-        question: "Valmistatteko korut itse?",
+        question: "Valmistatteko julisteet itse?",
         answer:
-          "Summari on jälleenmyyjä, emme valmista koruja itse. Valitsemme huolellisesti kauneimmat ja laadukkaimmat koruyksilöt luotettavilta toimittajilta. Jokainen koru käy läpi tiukan laatutarkastuksen ennen kuin se päätyy valikoimaamme. Näin voimme tarjota sinulle parhaan mahdollisen laadun ja hinnan yhdistelmän.",
+          "Summari on jälleenmyyjä, emme valmista julisteita itse. Valitsemme huolellisesti kauneimmat ja laadukkaimmat taideprintit luotettavilta toimittajilta. Jokainen juliste käy läpi tiukan laatutarkastuksen ennen kuin se päätyy valikoimaamme. Näin voimme tarjota sinulle parhaan mahdollisen laadun ja hinnan yhdistelmän.",
       },
       {
         question: "Hei, löysin saman tuotteen halvemmalla muualta!",
@@ -29,7 +31,11 @@ export function FAQClient() {
       {
         question: "Kuinka kauan toimitus kestää?",
         answer:
-          "Toimitusaika Suomeen on 2-4 viikkoa. Saat seurantanumeron heti kun tilaus on lähetetty. Voit seurata pakettisi kulkua sähköpostitse saamasi linkin kautta.",
+          "Toimitusaika on 2-4 viikkoa. Saat seurantanumeron heti kun tilaus on lähetetty. Voit seurata pakettisi kulkua sähköpostitse saamasi linkin kautta. Julisteet pakataan huolellisesti suojaputkeen.",
+      },
+      {
+        question: "Onko toimitus ilmainen?",
+        answer: "Kyllä, tarjoamme ilmaisen toimituksen kaikkiin maihin.",
       },
       {
         question: "Miten maksan tilaukseni?",
@@ -37,14 +43,19 @@ export function FAQClient() {
           "Hyväksymme kaikki yleisimmät maksutavat Stripen kautta: Visa, Mastercard, American Express, Apple Pay ja Google Pay. Maksut käsitellään turvallisesti Stripen kautta.",
       },
       {
-        question: "Voiko koruja käyttää päivittäin?",
+        question: "Mitä materiaalia julisteet ovat?",
         answer:
-          "Kyllä, korumme sopivat päivittäiseen käyttöön. Suosittelemme kuitenkin välttämään kosketusta veden, parfyymien ja kemikaalien kanssa korujen kunnon säilyttämiseksi pidempään.",
+          "Kaikki julisteemme ovat laadukkaita puuvillakangasprinttejä, jotka on tulostettu ympäristöystävällisellä Giclee-musteella. Kangas on kestävä ja värit ovat eloisia ja pitkäikäisiä. Tuotteet toimitetaan rullalle rullattuina ilman kehystä.",
       },
       {
-        question: "Miten hoidan korujani?",
+        question: "Tulevatko julisteet kehyksissä?",
         answer:
-          "Puhdista korut pehmeällä liinalla käytön jälkeen. Säilytä kuivassa paikassa, mieluiten pehmeässä pussissa tai korulaatikossa. Vältä kosketusta kemikaalien, parfyymien ja veden kanssa.",
+          "Julisteet toimitetaan rullalle rullattuina ilman kehystä. Näin voit valita itse kehykset, jotka sopivat parhaiten sisustukseesi. Kangas sopii standardikokoisiin kehyksiin.",
+      },
+      {
+        question: "Miten hoidan julisteitani?",
+        answer:
+          "Suojaa julisteet suoralta auringonvalolta ja kosteudelta. Suosittelemme kehystämistä, joka suojaa kangasta pölystä ja vaurioilta. Älä taita tai rullaa kangasta liian tiukasti.",
       },
       {
         question: "Entä jos tuote on viallinen?",
@@ -64,9 +75,9 @@ export function FAQClient() {
     ],
     en: [
       {
-        question: "Do you make the jewelry yourself?",
+        question: "Do you make the prints yourself?",
         answer:
-          "Summari is a reseller, we don't manufacture jewelry ourselves. We carefully select the most beautiful and highest quality jewelry pieces from trusted suppliers. Each piece goes through a strict quality inspection before it enters our collection. This way we can offer you the best possible combination of quality and price.",
+          "Summari is a reseller, we don't manufacture prints ourselves. We carefully select the most beautiful and highest quality art prints from trusted suppliers. Each print goes through a strict quality inspection before it enters our collection. This way we can offer you the best possible combination of quality and price.",
       },
       {
         question: "Hey, I found the same product cheaper elsewhere!",
@@ -81,7 +92,11 @@ export function FAQClient() {
       {
         question: "How long does delivery take?",
         answer:
-          "Delivery time to Finland is 2-4 weeks. You will receive a tracking number as soon as your order is shipped. You can track your package through the link sent to your email.",
+          "Delivery time is 2-4 weeks. You will receive a tracking number as soon as your order is shipped. You can track your package through the link sent to your email. Prints are carefully packed in a protective tube.",
+      },
+      {
+        question: "Is shipping free?",
+        answer: "Yes, we offer free shipping to all countries.",
       },
       {
         question: "How do I pay for my order?",
@@ -89,14 +104,19 @@ export function FAQClient() {
           "We accept all major payment methods through Stripe: Visa, Mastercard, American Express, Apple Pay, and Google Pay. Payments are processed securely through Stripe.",
       },
       {
-        question: "Can I wear the jewelry daily?",
+        question: "What material are the prints?",
         answer:
-          "Yes, our jewelry is suitable for daily wear. However, we recommend avoiding contact with water, perfumes, and chemicals to maintain the jewelry's condition longer.",
+          "All our prints are high-quality cotton canvas prints, printed with environmentally friendly Giclee ink. The canvas is durable and the colors are vibrant and long-lasting. Products are delivered rolled without a frame.",
       },
       {
-        question: "How do I care for my jewelry?",
+        question: "Do the prints come framed?",
         answer:
-          "Clean jewelry with a soft cloth after use. Store in a dry place, preferably in a soft pouch or jewelry box. Avoid contact with chemicals, perfumes, and water.",
+          "Prints are delivered rolled without a frame. This way you can choose frames that best suit your interior. The canvas fits standard frame sizes.",
+      },
+      {
+        question: "How do I care for my prints?",
+        answer:
+          "Protect prints from direct sunlight and moisture. We recommend framing, which protects the canvas from dust and damage. Do not fold or roll the canvas too tightly.",
       },
       {
         question: "What if the product is defective?",
@@ -116,6 +136,29 @@ export function FAQClient() {
   }
 
   const currentFAQ = language === "fi" ? faqData.fi : faqData.en
+
+  useEffect(() => {
+    const faqSchema = generateFAQSchema(currentFAQ)
+    const script = document.createElement("script")
+    script.type = "application/ld+json"
+    script.text = JSON.stringify(faqSchema)
+    script.id = "faq-schema"
+
+    // Remove old schema if exists
+    const oldScript = document.getElementById("faq-schema")
+    if (oldScript) {
+      oldScript.remove()
+    }
+
+    document.head.appendChild(script)
+
+    return () => {
+      const scriptToRemove = document.getElementById("faq-schema")
+      if (scriptToRemove) {
+        scriptToRemove.remove()
+      }
+    }
+  }, [currentFAQ])
 
   return (
     <div className="min-h-screen bg-background">
