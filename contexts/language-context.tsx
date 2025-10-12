@@ -29,44 +29,58 @@ const translations: Record<Language, Translations> = {
     // Products
     productsTitle: "Kokoelmamme",
     addToCart: "Lisää Ostoskoriin",
-    size: "Koko",
 
-    // Products - Art Prints
-    product1Name: "Auringonlasku Abstrakti",
-    product1Desc: "Lämmin abstrakti auringonlasku geometrisilla muodoilla",
+    // Product 1 - Pause for a Moment
+    product1Name: "Pysähdy Hetkeksi",
+    product1Desc: "Mustavalkoinen taidejuliste, jossa nainen pysäyttää hetken käsillään",
 
-    product2Name: "Sininen Aalto",
-    product2Desc: "Minimalistinen sininen aalto-abstraktio",
+    // Product 2 - Red Dot
+    product2Name: "Punainen Piste",
+    product2Desc: "Minimalistinen violetti taulu punaisella keskipisteellä",
 
-    product3Name: "Kultainen Geometria",
-    product3Desc: "Tyylikäs kultainen geometrinen taide",
+    // Product 3 - Honey Power 1968
+    product3Name: "Honey Power 1968",
+    product3Desc: "Japanilainen vintage hedelmäjuliste retro-tyylillä",
 
-    product4Name: "Vihreä Harmonia",
-    product4Desc: "Rauhoittava vihreä kasviaiheinen abstraktio",
+    // Product 4 - Niseko Mountain Resort
+    product4Name: "Niseko Mountain Resort",
+    product4Desc: "Punainen vintage hiihtojuliste japanilaisesta vuoristokohteesta",
 
-    product5Name: "Terrakotta Muodot",
-    product5Desc: "Lämpimät terrakotta-sävyt modernissa muotoilussa",
+    // Product 5 - Yoshino Cherry Blossoms
+    product5Name: "Yoshino Kirsikankukat",
+    product5Desc: "Kaunis japanilainen kirsikankukkavuori-juliste",
 
-    product6Name: "Mustavalkoinen Eleganssi",
-    product6Desc: "Ajaton mustavalkoinen minimalistinen taide",
+    // Product 6 - Double Sun
+    product6Name: "Kaksoisaurinko",
+    product6Desc: "Abstrakti Cerberus-hahmo kahden auringon alla",
 
-    product7Name: "Koralli Unelma",
-    product7Desc: "Pehmeät korallinsävyt orgaanisissa muodoissa",
+    // Product 7 - Flower Scent
+    product7Name: "Kukkien Tuoksu",
+    product7Desc: "Vihreä kukkajuliste hauskalla tekstillä",
 
-    product8Name: "Tummansininen Yö",
-    product8Desc: "Syvä tummansininen yötaivas abstraktiona",
+    // Product 8 - Mind Maze
+    product8Name: "Mind Maze",
+    product8Desc: "Hypnoottinen abstrakti taidejuliste",
 
-    product9Name: "Beige Minimalismi",
-    product9Desc: "Neutraali beige minimalistinen taide",
+    // Product 9 - Philosophical Cat
+    product9Name: "Filosofinen Kissa",
+    product9Desc: "Kissajuliste filosofisella tekstillä",
 
-    product10Name: "Ruosteinen Teollisuus",
-    product10Desc: "Teollinen ruosteinen tekstuuri abstraktiona",
+    // Product 10 - Surrealist Collage
+    product10Name: "Surrealistinen Kollaasi",
+    product10Desc: "Ainutlaatuinen kollaasi tupakka-askista, banaaneista ja sudenkorennoista",
 
-    product11Name: "Laventeli Kenttä",
-    product11Desc: "Pehmeä laventelinvioletti kenttämaisema",
+    // Product 11 - Tangerine
+    product11Name: "Tangerine",
+    product11Desc: "Japanilainen elokuvajuliste mustavalkoisella estetiikalla",
 
-    product12Name: "Oranssi Energia",
-    product12Desc: "Energinen oranssi dynaaminen abstraktio",
+    // Product 12 - Kintsugi
+    product12Name: "Kintsugi",
+    product12Desc: "Japanilainen kulhojuliste - kauniimpi korjattuna",
+
+    // Product 13 - World of Shapes
+    product13Name: "Muotojen Maailma",
+    product13Desc: "Abstrakti juliste muodoista ja silmistä",
 
     // Cart
     cart: "Ostoskori",
@@ -140,44 +154,58 @@ const translations: Record<Language, Translations> = {
     // Products
     productsTitle: "Our Collection",
     addToCart: "Add to Cart",
-    size: "Size",
 
-    // Products - Art Prints
-    product1Name: "Abstract Sunset",
-    product1Desc: "Warm abstract sunset with geometric shapes",
+    // Product 1 - Pause for a Moment
+    product1Name: "Pause for a Moment",
+    product1Desc: "Black and white art print with woman pausing time with her hands",
 
-    product2Name: "Blue Wave",
-    product2Desc: "Minimalist blue wave abstraction",
+    // Product 2 - Red Dot
+    product2Name: "Red Dot",
+    product2Desc: "Minimalist purple poster with red center dot",
 
-    product3Name: "Golden Geometry",
-    product3Desc: "Stylish golden geometric art",
+    // Product 3 - Honey Power 1968
+    product3Name: "Honey Power 1968",
+    product3Desc: "Japanese vintage fruit poster with retro style",
 
-    product4Name: "Green Harmony",
-    product4Desc: "Calming green botanical abstraction",
+    // Product 4 - Niseko Mountain Resort
+    product4Name: "Niseko Mountain Resort",
+    product4Desc: "Red vintage ski poster from Japanese mountain resort",
 
-    product5Name: "Terracotta Shapes",
-    product5Desc: "Warm terracotta tones in modern design",
+    // Product 5 - Yoshino Cherry Blossoms
+    product5Name: "Yoshino Cherry Blossoms",
+    product5Desc: "Beautiful Japanese cherry blossom mountain poster",
 
-    product6Name: "Black & White Elegance",
-    product6Desc: "Timeless black and white minimalist art",
+    // Product 6 - Double Sun
+    product6Name: "Double Sun",
+    product6Desc: "Abstract Cerberus figure under two suns",
 
-    product7Name: "Coral Dream",
-    product7Desc: "Soft coral tones in organic shapes",
+    // Product 7 - Flower Scent
+    product7Name: "Flower Scent",
+    product7Desc: "Green flower poster with playful text",
 
-    product8Name: "Dark Blue Night",
-    product8Desc: "Deep dark blue night sky abstraction",
+    // Product 8 - Mind Maze
+    product8Name: "Mind Maze",
+    product8Desc: "Hypnotic abstract art poster",
 
-    product9Name: "Beige Minimalism",
-    product9Desc: "Neutral beige minimalist art",
+    // Product 9 - Philosophical Cat
+    product9Name: "Philosophical Cat",
+    product9Desc: "Cat poster with philosophical text",
 
-    product10Name: "Rusty Industrial",
-    product10Desc: "Industrial rusty texture abstraction",
+    // Product 10 - Surrealist Collage
+    product10Name: "Surrealist Collage",
+    product10Desc: "Unique collage of cigarette pack, bananas, and dragonflies",
 
-    product11Name: "Lavender Field",
-    product11Desc: "Soft lavender purple field landscape",
+    // Product 11 - Tangerine
+    product11Name: "Tangerine",
+    product11Desc: "Japanese movie poster with black and white aesthetic",
 
-    product12Name: "Orange Energy",
-    product12Desc: "Energetic orange dynamic abstraction",
+    // Product 12 - Kintsugi
+    product12Name: "Kintsugi",
+    product12Desc: "Japanese bowl poster - more beautiful for having been broken",
+
+    // Product 13 - World of Shapes
+    product13Name: "World of Shapes",
+    product13Desc: "Abstract poster about shapes and eyes",
 
     // Cart
     cart: "Shopping Cart",
