@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Pysähdy Hetkeksi",
-    image: "/black-white-woman-hands-face.jpg",
+    image: "/black-white-woman-hands-stop-gesture.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Mustavalkoinen minimalistinen taide, jossa nainen pitää käsiä kasvojensa edessä",
@@ -12,7 +12,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Punainen Piste",
-    image: "/purple-red-dot-center.jpg",
+    image: "/purple-abstract-red-dot-center.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Hypnoottinen violetti abstraktio punaisella pisteellä keskellä",
@@ -20,7 +20,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Honey Power 1968",
-    image: "/japanese-fruit-honey-power.jpg",
+    image: "/japanese-honey-power-vintage-fruit-poster.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Japanilainen vintage-juliste hedelmällä ja tekstillä 'Honey Power, Hold My Flower'",
@@ -28,7 +28,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "Niseko Mountain Resort",
-    image: "/niseko-mountain-resort-red.jpg",
+    image: "/red-niseko-mountain-resort-poster.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Punainen vintage-hiihtojuliste Niseko-vuorelta, jossa lumi sataa",
@@ -44,7 +44,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Kaksoisaurinko",
-    image: "/cerberus-two-suns-abstract.jpg",
+    image: "/abstract-cerberus-two-suns.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Abstrakti Cerberus-hahmo kahden auringon alla, surrealistinen taide",
@@ -60,7 +60,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Mind Maze",
-    image: "/hypnotic-mind-maze-abstract.jpg",
+    image: "/hypnotic-mind-maze-psychedelic-art.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Hypnoottinen abstrakti taide, jossa lukee 'Mind Maze'",
@@ -68,7 +68,7 @@ export const products: Product[] = [
   {
     id: 9,
     name: "Filosofinen Kissa",
-    image: "/cat-whatever-you-think.jpg",
+    image: "/cat-philosophical-text-poster.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Kissakuva tekstillä 'Whatever you think it is, it isn't'",
@@ -76,7 +76,7 @@ export const products: Product[] = [
   {
     id: 10,
     name: "Surrealistinen Kollaasi",
-    image: "/cigarette-bananas-dragonfly-flower.jpg",
+    image: "/surrealist-collage-cigarette-bananas.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Surrealistinen kollaasi tupakka-askista, banaaneista naamoineen, sudenkorennoista ja kukista",
@@ -84,7 +84,7 @@ export const products: Product[] = [
   {
     id: 11,
     name: "Tangerine",
-    image: "/japanese-woman-blood-tangerine.jpg",
+    image: "/japanese-tangerine-movie-poster.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Japanilainen mustavalkoinen elokuvajuliste, jossa nainen ja teksti 'Tangerine'",
@@ -92,7 +92,7 @@ export const products: Product[] = [
   {
     id: 12,
     name: "Kintsugi",
-    image: "/japanese-bowl-broken-beautiful.jpg",
+    image: "/japanese-kintsugi-bowl-broken-beauty.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Japanilainen kulho tekstillä 'More beautiful for having been broken'",
@@ -100,7 +100,7 @@ export const products: Product[] = [
   {
     id: 13,
     name: "Muotojen Maailma",
-    image: "/shapes-holes-eyes-abstract.jpg",
+    image: "/abstract-shapes-eyes-were-all-just-shapes.avif",
     price: "12,90 €",
     priceInCents: 1290,
     description: "Abstrakti taide tekstillä 'We're all just shapes', aukkoja joissa silmät",
@@ -109,7 +109,7 @@ export const products: Product[] = [
 
 export const productDetails: Record<number, ProductDetails> = {
   1: {
-    images: ["/black-white-woman-hands-face.jpg"],
+    images: ["/black-white-woman-hands-stop-gesture.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -130,7 +130,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   2: {
-    images: ["/purple-red-dot-center.jpg"],
+    images: ["/purple-abstract-red-dot-center.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -151,7 +151,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   3: {
-    images: ["/japanese-fruit-honey-power.jpg"],
+    images: ["/japanese-honey-power-vintage-fruit-poster.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -172,7 +172,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   4: {
-    images: ["/niseko-mountain-resort-red.jpg"],
+    images: ["/red-niseko-mountain-resort-poster.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -214,7 +214,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   6: {
-    images: ["/cerberus-two-suns-abstract.jpg"],
+    images: ["/abstract-cerberus-two-suns.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -256,7 +256,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   8: {
-    images: ["/hypnotic-mind-maze-abstract.jpg"],
+    images: ["/hypnotic-mind-maze-psychedelic-art.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -277,7 +277,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   9: {
-    images: ["/cat-whatever-you-think.jpg"],
+    images: ["/cat-philosophical-text-poster.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -298,7 +298,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   10: {
-    images: ["/cigarette-bananas-dragonfly-flower.jpg"],
+    images: ["/surrealist-collage-cigarette-bananas.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -319,7 +319,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   11: {
-    images: ["/japanese-woman-blood-tangerine.jpg"],
+    images: ["/japanese-tangerine-movie-poster.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -340,7 +340,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   12: {
-    images: ["/japanese-bowl-broken-beautiful.jpg"],
+    images: ["/japanese-kintsugi-bowl-broken-beauty.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
@@ -361,7 +361,7 @@ export const productDetails: Record<number, ProductDetails> = {
     ],
   },
   13: {
-    images: ["/shapes-holes-eyes-abstract.jpg"],
+    images: ["/abstract-shapes-eyes-were-all-just-shapes.avif"],
     materials: "Laadukas puuvillakangas, ympäristöystävällinen Giclee-muste",
     dimensions: "Saatavilla useissa koossa",
     care: "Suojaa suoralta auringonvalolta ja kosteudelta. Kehystäminen suositeltavaa.",
