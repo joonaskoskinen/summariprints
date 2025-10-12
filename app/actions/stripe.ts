@@ -1,26 +1,23 @@
 "use server"
 
 import { stripe } from "@/lib/stripe-client"
-import { products } from "@/lib/products"
 import type { CartItem } from "@/lib/types"
 
 export async function createCheckoutSession(items: CartItem[]) {
   try {
-    // Convert cart items to Stripe line items with server-side price validation
     const lineItems = items.map((item) => {
-      // Look up product from secure products array
-      const product = products.find((p) => p.id === item.id)
-      if (!product) {
-        throw new Error(`Product with id "${item.id}" not found`)
+      // Validate that the item has required price information
+      if (!item.priceInCents || !item.name) {
+        throw new Error(`Invalid cart item: missing price or name`)
       }
 
       return {
         price_data: {
           currency: "eur",
           product_data: {
-            name: product.name,
+            name: `${item.name}${item.selectedSize ? ` - ${item.selectedSize}` : ""}`,
           },
-          unit_amount: product.priceInCents, // Use server-side price
+          unit_amount: item.priceInCents, // Use the price from cart item (includes selected size)
         },
         quantity: item.quantity,
       }
