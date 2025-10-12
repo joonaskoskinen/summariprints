@@ -5,7 +5,7 @@ import { generateSEO } from "@/lib/seo"
 export const metadata: Metadata = generateSEO({
   title: "Meistä - Summari",
   description:
-    "Summari on suomalainen taidejulistekauppa, joka tarjoaa huolellisesti valittuja, laadukkaita printtejä. Tutustu tarinaamme ja arvoihimme.",
+    "Summari on suomalainen korukauppa, joka tarjoaa huolellisesti valittuja, laadukkaita koruja. Tutustu tarinaamme ja arvoihimme.",
   url: "https://summari.fi/about",
 })
 
@@ -20,9 +20,9 @@ export default function AboutPage() {
               Tervetuloa Summariin
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Olemme suomalainen taidejulistekauppa, joka tuo sinulle kauneimmat ja laadukkaimmat printit moderniin
-              kotiisi. Jokainen juliste on huolellisesti valittu ja tarkastettu, jotta voit nauttia tyylikkäistä
-              taidejulisteista huolettomasti.
+              Olemme suomalainen korukauppa, joka tuo sinulle kauneimmat ja laadukkaimmat koruyksilöt ympäri maailmaa.
+              Jokainen koru on huolellisesti valittu ja tarkastettu, jotta voit nauttia tyylikkäistä koruista
+              huolettomasti.
             </p>
           </div>
         </div>
@@ -32,22 +32,21 @@ export default function AboutPage() {
       <section className="py-20 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-3xl font-bold mb-6 text-center">Tarinamme</h2>
+            <h2 className="font-serif text-3xl font-bold mb-6 text-center">Tarinmme</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Summari syntyi rakkaudesta kauniisiin taidejulisteisiin ja halusta tehdä laadukkaat printit helposti
-                saavutettaviksi kaikille. Ymmärrämme, että taidejulisteet ovat enemmän kuin pelkkiä sisustuselementtejä
-                – ne ovat ilmaisun väline, tunnelman luojia ja persoonallisuuden heijastajia.
+                Summari syntyi rakkaudesta kauniisiin koruihin ja halusta tehdä laadukkaat korut helposti
+                saavutettaviksi kaikille. Ymmärrämme, että korut ovat enemmän kuin pelkkiä asusteita – ne ovat ilmaisun
+                väline, muistoja ja tunteita kantavia aarteita.
               </p>
               <p>
-                Emme valmista julisteitamme itse, vaan olemme huolellisesti valitsevia jälleenmyyjiä. Työskentelemme
-                vain luotettavien ja laatutarkastettujen toimittajien kanssa, jotta voimme taata jokaiselle
-                asiakkaallemme parhaan mahdollisen ostokokemuksen ja laadukkaat tuotteet.
+                Emme valmista korujamme itse, vaan olemme huolellisesti valitsevia jälleenmyyjiä. Työskentelemme vain
+                luotettavien ja laatutarkastettujen toimittajien kanssa, jotta voimme taata jokaiselle asiakkaallemme
+                parhaan mahdollisen ostokokemuksen ja laadukkaat tuotteet.
               </p>
               <p>
-                Jokainen kokoelmaamme päätyvä juliste käy läpi tiukan laaduntarkastuksen. Etsimme jatkuvasti uusia,
-                ainutlaatuisia designeja, jotka yhdistävät tyylin, laadun ja kohtuullisen hinnan. Kaikki tuotteemme
-                toimitetaan huolellisesti pakattuina suoraan sinulle.
+                Jokainen kokoelmaamme päätyvä koru käy läpi tiukan laaduntarkastuksen. Etsimme jatkuvasti uusia,
+                ainutlaatuisia kappaleita, jotka yhdistävät tyylin, laadun ja kohtuullisen hinnan.
               </p>
             </div>
           </div>
@@ -65,7 +64,7 @@ export default function AboutPage() {
               </div>
               <h3 className="font-semibold text-lg">Laatu Ensin</h3>
               <p className="text-sm text-muted-foreground">
-                Valitsemme vain kauneimmat ja laadukkaimmat taideprintit huolellisesti tarkastetuilta toimittajilta.
+                Valitsemme vain kauneimmat ja laadukkaimmat koruyksilöt huolellisesti tarkastetuilta toimittajilta.
               </p>
             </div>
 
@@ -95,7 +94,7 @@ export default function AboutPage() {
               </div>
               <h3 className="font-semibold text-lg">Yhteisö</h3>
               <p className="text-sm text-muted-foreground">
-                Rakennamme yhteisöä sisustuksen ystävien kanssa, jotka arvostavat laatua ja tyyliä.
+                Rakennamme yhteisöä korujen ystävien kanssa, jotka arvostavat laatua ja tyyliä.
               </p>
             </div>
           </div>
@@ -117,10 +116,10 @@ export default function AboutPage() {
               </div>
 
               <div className="border-l-4 border-accent pl-6 py-2">
-                <h3 className="font-semibold text-lg mb-2">Laadukkaat Printit</h3>
+                <h3 className="font-semibold text-lg mb-2">Laatutarkastetut Toimittajat</h3>
                 <p className="text-muted-foreground">
-                  Kaikki julisteemme ovat laadukkaita puuvillakangasprinttejä ympäristöystävällisellä Giclee-musteella.
-                  Jokainen juliste tarkastetaan ennen kuin se lähetetään sinulle.
+                  Työskentelemme vain luotettavien kumppaneiden kanssa. Jokainen koru tarkastetaan ennen kuin se
+                  lähetetään sinulle.
                 </p>
               </div>
 
@@ -132,10 +131,10 @@ export default function AboutPage() {
               </div>
 
               <div className="border-l-4 border-accent pl-6 py-2">
-                <h3 className="font-semibold text-lg mb-2">Ilmainen Toimitus</h3>
+                <h3 className="font-semibold text-lg mb-2">Ilmainen Palautus</h3>
                 <p className="text-muted-foreground">
-                  Tarjoamme ilmaisen toimituksen kaikkiin maihin. Jos tuote ei vastaa odotuksiasi, voit palauttaa sen 14
-                  päivän kuluessa.
+                  Tarjoamme 14 päivän palautusoikeuden. Jos tuote ei vastaa odotuksiasi, voit palauttaa sen
+                  vaivattomasti.
                 </p>
               </div>
             </div>
@@ -148,7 +147,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="font-serif text-3xl font-bold mb-4">Aloita Matkasi Kanssamme</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Tutustu kokoelmaamme ja löydä täydellinen taidejuliste juuri sinulle. Olemme täällä auttamassa sinua joka
+            Tutustu kokoelmaamme ja löydä täydellinen koru juuri sinulle. Olemme täällä auttamassa sinua joka
             askeleella.
           </p>
           <a
