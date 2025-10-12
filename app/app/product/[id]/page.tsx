@@ -13,6 +13,25 @@ export function generateStaticParams() {
   }))
 }
 
+const getProductName = (productId: number): string => {
+  const productNames: Record<number, string> = {
+    1: "Pysähdy Hetkeksi",
+    2: "Punainen Piste",
+    3: "Honey Power 1968",
+    4: "Niseko Mountain Resort",
+    5: "Yoshino Kirsikankukat",
+    6: "Kaksoisaurinko",
+    7: "Kukkien Tuoksu",
+    8: "Mind Maze",
+    9: "Filosofinen Kissa",
+    10: "Surrealistinen Kollaasi",
+    11: "Tangerine",
+    12: "Kintsugi",
+    13: "Muotojen Maailma",
+  }
+  return productNames[productId] || `Product ${productId}`
+}
+
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const productId = Number.parseInt(params.id)
   const product = products.find((p) => p.id === productId)
@@ -22,14 +41,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     return {}
   }
 
-  // Get product name from translations (using Finnish as default)
-  const productNames: Record<number, string> = {
-    1: "Kristallipisara",
-    2: "Sydämen Romanssi",
-    3: "Kerrostettu Eleganssi",
-  }
-
-  const productName = productNames[productId] || product.name
+  const productName = getProductName(productId)
 
   return generateSEO({
     title: productName,
@@ -50,13 +62,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     notFound()
   }
 
-  const productNames: Record<number, string> = {
-    1: "Kristallipisara",
-    2: "Sydämen Romanssi",
-    3: "Kerrostettu Eleganssi",
-  }
-
-  const productName = productNames[productId] || product.name
+  const productName = getProductName(productId)
 
   const schema = generateProductSchema({
     name: productName,
