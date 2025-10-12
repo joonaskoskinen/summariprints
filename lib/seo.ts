@@ -23,6 +23,9 @@ export function generateSEO({
   return {
     title: fullTitle,
     description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title: fullTitle,
       description,
@@ -76,6 +79,78 @@ export function generateProductSchema(product: {
       priceCurrency: product.currency,
       availability: "https://schema.org/InStock",
       url: product.url,
+      seller: {
+        "@type": "Organization",
+        name: "Summari",
+      },
     },
+    brand: {
+      "@type": "Brand",
+      name: "Summari",
+    },
+  }
+}
+
+export function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  }
+}
+
+export function generateOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Summari",
+    url: "https://summari.fi",
+    logo: "https://summari.fi/logo.png",
+    description:
+      "Summari on suomalainen taidejulistekauppa, joka tarjoaa laadukkaita printtejä moderniin sisustukseen.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "tuki@summari.fi",
+      contactType: "Customer Service",
+      availableLanguage: ["Finnish", "English"],
+    },
+    sameAs: [],
+  }
+}
+
+export function generateWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Summari",
+    url: "https://summari.fi",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://summari.fi/?search={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  }
+}
+
+export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
   }
 }
