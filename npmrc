@@ -1,0 +1,4 @@
+# Force legacy peer deps to resolve React 19 compatibility issues
+legacy-peer-deps=true
+auto-install-peers=true
+strict-peer-dependencies=false
