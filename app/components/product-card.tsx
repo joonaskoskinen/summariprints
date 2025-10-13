@@ -70,7 +70,9 @@ export function ProductCard({ product }: ProductCardProps) {
             </h3>
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{productDesc}</p>
-          <p className="text-2xl font-bold text-rose-gold pt-2">{product.price}</p>
+          <p className="text-2xl font-bold text-rose-gold pt-2">
+            {t("priceFrom")} {product.price}
+          </p>
         </div>
         <Button
           className="w-full bg-gradient-to-r from-rose-gold to-warm-gold text-white hover:shadow-lg hover:shadow-rose-gold/30 h-11 gap-2 transition-all hover:scale-[1.02]"
