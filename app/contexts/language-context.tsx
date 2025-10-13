@@ -19,7 +19,6 @@ const translations: Record<Language, Translations> = {
     admin: "Admin",
 
     // Hero
-    newArrivals: "Uutuudet saapuneet",
     heroTitle: "Taidejulisteet Kotiisi",
     heroSubtitle: "Moderneja Tauluja",
     heroDescription: "Löydä täydellinen taidejuliste Summari-kokoelmasta. Laadukkaat printit moderniin sisustukseen.",
@@ -153,7 +152,6 @@ const translations: Record<Language, Translations> = {
     admin: "Admin",
 
     // Hero
-    newArrivals: "New Arrivals",
     heroTitle: "Art Prints for Your Home",
     heroSubtitle: "Modern Posters",
     heroDescription:
