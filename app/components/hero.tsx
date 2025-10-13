@@ -1,7 +1,6 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
-import { Sparkles } from "lucide-react"
 import { useState, useEffect } from "react"
 
 export function Hero() {
@@ -43,12 +42,11 @@ export function Hero() {
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-4xl text-center">
-          <div
-            className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-gold/20 to-warm-gold/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-accent mb-8 shine-effect ${isVisible ? "scale-in" : "opacity-0"}`}
+          <p
+            className={`text-xs uppercase tracking-[0.4em] text-accent/70 font-light mb-6 ${isVisible ? "fade-in" : "opacity-0"}`}
           >
-            <Sparkles className="h-4 w-4" />
-            {t("newArrivals")}
-          </div>
+            {t("heroSubtitle")}
+          </p>
 
           <h2
             className={`font-serif text-4xl font-bold tracking-tight text-balance sm:text-5xl md:text-6xl lg:text-7xl mb-6 ${isVisible ? "fade-in-up" : "opacity-0"}`}
