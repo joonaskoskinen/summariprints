@@ -32,7 +32,7 @@ export default function AboutPage() {
       <section className="py-20 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-serif text-3xl font-bold mb-6 text-center">Tarinmme</h2>
+            <h2 className="font-serif text-3xl font-bold mb-6 text-center">Tarinamme</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Summari syntyi rakkaudesta kauniisiin koruihin ja halusta tehdä laadukkaat korut helposti
