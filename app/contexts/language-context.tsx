@@ -106,7 +106,7 @@ const translations: Record<Language, Translations> = {
     footerDescription:
       "Summari on suomalainen taidejulistekauppa, joka tarjoaa laadukkaita printtejä moderniin sisustukseen.",
     aboutUs: "Tietoa Meistä",
-    ourStory: "Tarinmme",
+    ourStory: "Tarinamme",
     terms: "Käyttöehdot",
     returns: "Palautukset",
     contactInfo: "Yhteystiedot",
@@ -115,7 +115,7 @@ const translations: Record<Language, Translations> = {
 
     // Trust Badges
     freeShipping: "Ilmainen Toimitus",
-    freeShippingDesc: "Yli 40€ ostoksiin",
+    freeShippingDesc: "Kaikkiin ostoksiin",
     securePayment: "Turvallinen Maksu",
     securePaymentDesc: "Stripe-suojattu maksu",
     returnPolicy: "Palautusoikeus",
@@ -130,7 +130,7 @@ const translations: Record<Language, Translations> = {
     welcomeToSummari: "Tervetuloa Summariin",
     aboutIntro:
       "Olemme suomalainen taidejulistekauppa, joka tuo sinulle kauneimmat ja laadukkaimmat printit moderniin kotiisi.",
-    ourStoryTitle: "Tarinmme",
+    ourStoryTitle: "Tarinamme",
     ourValuesTitle: "Arvomme",
     whyChooseUsTitle: "Miksi Valita Summari?",
     qualityFirst: "Laatu Ensin",
@@ -244,7 +244,7 @@ const translations: Record<Language, Translations> = {
 
     // Trust Badges
     freeShipping: "Free Shipping",
-    freeShippingDesc: "On orders over 40€",
+    freeShippingDesc: "On all orders",
     securePayment: "Secure Payment",
     securePaymentDesc: "Stripe-protected payment",
     returnPolicy: "Return Policy",
