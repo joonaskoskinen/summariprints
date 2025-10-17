@@ -20,12 +20,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://summari.fi"),
   title: {
-    default: "Summari - Ainutlaatuiset Korut",
+    default: "Summari - Taidejulisteet ja Modernit Printit",
     template: "%s | Summari",
   },
   description:
-    "Löydä täydellinen koru Summari-kokoelmasta. Laadukkaat ja tyylikkäät korut jokaiseen hetkeen. Nopea toimitus Suomeen.",
-  keywords: ["korut", "kaulakorut", "jewelry", "necklaces", "summari", "verkkokauppa"],
+    "Löydä täydellinen taidejuliste Summari-kokoelmasta. Laadukkaat ja tyylikkäät printit moderniin sisustukseen. Nopea toimitus Suomeen.",
+  keywords: ["taidejulisteet", "printit", "julisteet", "art prints", "posters", "summari", "verkkokauppa", "sisustus"],
   authors: [{ name: "Summari" }],
   creator: "Summari",
   publisher: "Summari",
@@ -34,21 +34,21 @@ export const metadata: Metadata = {
     locale: "fi_FI",
     url: "https://summari.fi",
     siteName: "Summari",
-    title: "Summari - Ainutlaatuiset Korut",
-    description: "Löydä täydellinen koru Summari-kokoelmasta. Laadukkaat ja tyylikkäät korut jokaiseen hetkeen.",
+    title: "Summari - Taidejulisteet ja Modernit Printit",
+    description: "Löydä täydellinen taidejuliste Summari-kokoelmasta. Laadukkaat printit moderniin sisustukseen.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Summari Korut",
+        alt: "Summari Taidejulisteet",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Summari - Ainutlaatuiset Korut",
-    description: "Löydä täydellinen koru Summari-kokoelmasta. Laadukkaat ja tyylikkäät korut jokaiseen hetkeen.",
+    title: "Summari - Taidejulisteet ja Modernit Printit",
+    description: "Löydä täydellinen taidejuliste Summari-kokoelmasta. Laadukkaat printit moderniin sisustukseen.",
     images: ["/og-image.jpg"],
   },
   robots: {
