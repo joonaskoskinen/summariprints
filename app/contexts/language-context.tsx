@@ -28,69 +28,58 @@ const translations: Record<Language, Translations> = {
     // Products
     productsTitle: "Kokoelmamme",
     addToCart: "Lisää Ostoskoriin",
-    priceFrom: "alk",
 
     // Product 1 - Pause for a Moment
     product1Name: "Pysähdy Hetkeksi",
-    product1Desc:
-      "Mustavalkoinen taidejuliste, jossa nainen pysäyttää hetken käsillään. Minimalistinen ja ajaton design moderniin sisustukseen.",
+    product1Desc: "Mustavalkoinen taidejuliste, jossa nainen pysäyttää hetken käsillään",
 
     // Product 2 - Red Dot
     product2Name: "Punainen Piste",
-    product2Desc:
-      "Minimalistinen violetti taulu punaisella keskipisteellä. Abstrakti taidejuliste, joka luo rauhallisen tunnelman.",
+    product2Desc: "Minimalistinen violetti taulu punaisella keskipisteellä",
 
     // Product 3 - Honey Power 1968
     product3Name: "Honey Power 1968",
-    product3Desc:
-      "Japanilainen vintage hedelmäjuliste retro-tyylillä. Ainutlaatuinen 60-luvun inspiroima design sisustukseen.",
+    product3Desc: "Japanilainen vintage hedelmäjuliste retro-tyylillä",
 
     // Product 4 - Niseko Mountain Resort
     product4Name: "Niseko Mountain Resort",
-    product4Desc:
-      "Punainen vintage hiihtojuliste japanilaisesta vuoristokohteesta. Klassinen talviurheilujuliste retro-estetiikalla.",
+    product4Desc: "Punainen vintage hiihtojuliste japanilaisesta vuoristokohteesta",
 
     // Product 5 - Yoshino Cherry Blossoms
     product5Name: "Yoshino Kirsikankukat",
-    product5Desc:
-      "Kaunis japanilainen kirsikankukkavuori-juliste. Rauhallinen ja harmoninen taidejuliste luonnon kauneudesta.",
+    product5Desc: "Kaunis japanilainen kirsikankukkavuori-juliste",
 
     // Product 6 - Double Sun
     product6Name: "Kaksoisaurinko",
-    product6Desc:
-      "Abstrakti Cerberus-hahmo kahden auringon alla. Rohkea ja ainutlaatuinen taidejuliste moderniin kotiin.",
+    product6Desc: "Abstrakti Cerberus-hahmo kahden auringon alla",
 
     // Product 7 - Flower Scent
     product7Name: "Kukkien Tuoksu",
-    product7Desc: "Vihreä kukkajuliste hauskalla tekstillä. Leikkisä ja raikas taidejuliste, joka tuo hymyn huulille.",
+    product7Desc: "Vihreä kukkajuliste hauskalla tekstillä",
 
     // Product 8 - Mind Maze
     product8Name: "Mind Maze",
-    product8Desc: "Hypnoottinen abstrakti taidejuliste. Kiehtova ja syvällinen design, joka herättää ajatuksia.",
+    product8Desc: "Hypnoottinen abstrakti taidejuliste",
 
     // Product 9 - Philosophical Cat
     product9Name: "Filosofinen Kissa",
-    product9Desc: "Kissajuliste filosofisella tekstillä. Hauska ja ajatuksia herättävä taidejuliste kissanystäville.",
+    product9Desc: "Kissajuliste filosofisella tekstillä",
 
     // Product 10 - Surrealist Collage
     product10Name: "Surrealistinen Kollaasi",
-    product10Desc:
-      "Ainutlaatuinen kollaasi tupakka-askista, banaaneista ja sudenkorennoista. Surrealistinen taidejuliste rohkeaan sisustukseen.",
+    product10Desc: "Ainutlaatuinen kollaasi tupakka-askista, banaaneista ja sudenkorennoista",
 
     // Product 11 - Tangerine
     product11Name: "Tangerine",
-    product11Desc:
-      "Japanilainen elokuvajuliste mustavalkoisella estetiikalla. Dramaattinen ja tyylikäs vintage-juliste.",
+    product11Desc: "Japanilainen elokuvajuliste mustavalkoisella estetiikalla",
 
     // Product 12 - Kintsugi
     product12Name: "Kintsugi",
-    product12Desc:
-      "Japanilainen kulhojuliste - kauniimpi korjattuna. Inspiroiva taidejuliste japanilaisesta kintsugi-filosofiasta.",
+    product12Desc: "Japanilainen kulhojuliste - kauniimpi korjattuna",
 
     // Product 13 - World of Shapes
     product13Name: "Muotojen Maailma",
-    product13Desc:
-      "Abstrakti juliste muodoista ja silmistä. Leikkisä ja ajatuksia herättävä taidejuliste moderniin kotiin.",
+    product13Desc: "Abstrakti juliste muodoista ja silmistä",
 
     // Cart
     cart: "Ostoskori",
@@ -163,64 +152,58 @@ const translations: Record<Language, Translations> = {
     // Products
     productsTitle: "Our Collection",
     addToCart: "Add to Cart",
-    priceFrom: "from",
 
     // Product 1 - Pause for a Moment
     product1Name: "Pause for a Moment",
-    product1Desc:
-      "Black and white art print with woman pausing time with her hands. Minimalist and timeless design for modern interiors.",
+    product1Desc: "Black and white art print with woman pausing time with her hands",
 
     // Product 2 - Red Dot
     product2Name: "Red Dot",
-    product2Desc: "Minimalist purple poster with red center dot. Abstract art print that creates a calm atmosphere.",
+    product2Desc: "Minimalist purple poster with red center dot",
 
     // Product 3 - Honey Power 1968
     product3Name: "Honey Power 1968",
-    product3Desc: "Japanese vintage fruit poster with retro style. Unique 60s-inspired design for your interior.",
+    product3Desc: "Japanese vintage fruit poster with retro style",
 
     // Product 4 - Niseko Mountain Resort
     product4Name: "Niseko Mountain Resort",
-    product4Desc:
-      "Red vintage ski poster from Japanese mountain resort. Classic winter sports poster with retro aesthetic.",
+    product4Desc: "Red vintage ski poster from Japanese mountain resort",
 
     // Product 5 - Yoshino Cherry Blossoms
     product5Name: "Yoshino Cherry Blossoms",
-    product5Desc:
-      "Beautiful Japanese cherry blossom mountain poster. Peaceful and harmonious art print of nature's beauty.",
+    product5Desc: "Beautiful Japanese cherry blossom mountain poster",
 
     // Product 6 - Double Sun
     product6Name: "Double Sun",
-    product6Desc: "Abstract Cerberus figure under two suns. Bold and unique art print for modern homes.",
+    product6Desc: "Abstract Cerberus figure under two suns",
 
     // Product 7 - Flower Scent
     product7Name: "Flower Scent",
-    product7Desc: "Green flower poster with playful text. Fun and fresh art print that brings a smile to your face.",
+    product7Desc: "Green flower poster with playful text",
 
     // Product 8 - Mind Maze
     product8Name: "Mind Maze",
-    product8Desc: "Hypnotic abstract art poster. Captivating and profound design that sparks thoughts.",
+    product8Desc: "Hypnotic abstract art poster",
 
     // Product 9 - Philosophical Cat
     product9Name: "Philosophical Cat",
-    product9Desc: "Cat poster with philosophical text. Fun and thought-provoking art print for cat lovers.",
+    product9Desc: "Cat poster with philosophical text",
 
     // Product 10 - Surrealist Collage
     product10Name: "Surrealist Collage",
-    product10Desc:
-      "Unique collage of cigarette pack, bananas, and dragonflies. Surrealist art print for bold interiors.",
+    product10Desc: "Unique collage of cigarette pack, bananas, and dragonflies",
 
     // Product 11 - Tangerine
     product11Name: "Tangerine",
-    product11Desc: "Japanese movie poster with black and white aesthetic. Dramatic and stylish vintage poster.",
+    product11Desc: "Japanese movie poster with black and white aesthetic",
 
     // Product 12 - Kintsugi
     product12Name: "Kintsugi",
-    product12Desc:
-      "Japanese bowl poster - more beautiful for having been broken. Inspiring art print about Japanese kintsugi philosophy.",
+    product12Desc: "Japanese bowl poster - more beautiful for having been broken",
 
     // Product 13 - World of Shapes
     product13Name: "World of Shapes",
-    product13Desc: "Abstract poster about shapes and eyes. Playful and thought-provoking art print for modern homes.",
+    product13Desc: "Abstract poster about shapes and eyes",
 
     // Cart
     cart: "Shopping Cart",
