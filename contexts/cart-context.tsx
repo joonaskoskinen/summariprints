@@ -114,8 +114,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0)
 
   const subtotal = items.reduce((sum, item) => {
-    const price = Number.parseFloat(item.price.replace("€", "").replace(",", ".").trim())
-    return sum + price * item.quantity
+    return sum + item.priceInCents * item.quantity
   }, 0)
 
   const discountAmount = discountCode === "SUMMARI10" ? subtotal * 0.1 : 0
