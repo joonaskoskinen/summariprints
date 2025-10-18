@@ -76,9 +76,12 @@ export function ProductCard({ product }: ProductCardProps) {
             </h3>
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{productDesc}</p>
-          <p className="text-2xl font-bold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent pt-2">
-            {product.price}
-          </p>
+          <div className="pt-3 space-y-1">
+            <p className="text-xs text-muted-foreground font-medium">{t("startingFrom")}</p>
+            <p className="text-3xl font-bold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent">
+              {product.price}
+            </p>
+          </div>
         </div>
         <Button
           className="w-full bg-gradient-to-r from-primary to-accent/90 text-primary-foreground hover:from-accent hover:to-gold h-12 gap-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 group/btn"
