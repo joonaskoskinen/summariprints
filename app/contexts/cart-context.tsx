@@ -118,7 +118,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, 0)
 
   const discountAmount = discountCode === "SUMMARI10" ? subtotal * 0.1 : 0
-  const totalPrice = subtotal - discountAmount
+  const totalPrice = (subtotal - discountAmount) / 100
 
   return (
     <CartContext.Provider
