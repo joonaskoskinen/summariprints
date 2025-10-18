@@ -7,7 +7,7 @@ import Link from "next/link"
 import type { Product } from "@/lib/types"
 import { useCart } from "@/contexts/cart-context"
 import { useLanguage } from "@/contexts/language-context"
-import { ShoppingBag } from "lucide-react"
+import { ShoppingBag, Eye } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 interface ProductCardProps {
@@ -44,18 +44,24 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card
       ref={cardRef}
-      className={`shine-effect group overflow-hidden transition-all hover:shadow-xl hover:shadow-rose-gold/20 border-border/50 hover:border-rose-gold/30 ${isVisible ? "fade-in-up" : "opacity-0"}`}
+      className={`group overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 border-border/50 hover:border-accent/30 ${isVisible ? "fade-in-up" : "opacity-0"}`}
     >
       <Link href={`/product/${product.id}`}>
         <CardContent className="p-0">
-          <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-soft-pink to-muted/30">
+          <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-muted/30 to-accent/5">
             <Image
               src={product.image || "/placeholder.svg"}
               alt={productName}
               fill
-              className="object-cover transition-all duration-500 group-hover:scale-110"
+              className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-all duration-500" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+              <div className="bg-white/95 backdrop-blur-sm rounded-full p-4 shadow-xl">
+                <Eye className="h-6 w-6 text-primary" />
+              </div>
+            </div>
+            <div className="absolute inset-0 shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
           </div>
         </CardContent>
       </Link>
@@ -63,22 +69,25 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="w-full space-y-2">
           <Link href={`/product/${product.id}`}>
             <h3
-              className="font-serif text-2xl font-semibold hover:text-rose-gold transition-colors"
+              className="font-serif text-2xl font-semibold transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-gold group-hover:bg-clip-text"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               {productName}
             </h3>
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{productDesc}</p>
-          <p className="text-2xl font-bold text-rose-gold pt-2">
-            {t("priceFrom")} {product.price}
-          </p>
+          <div className="pt-3 space-y-1">
+            <p className="text-xs text-muted-foreground font-medium">{t("startingFrom")}</p>
+            <p className="text-3xl font-bold bg-gradient-to-r from-accent to-gold bg-clip-text text-transparent">
+              {product.price}
+            </p>
+          </div>
         </div>
         <Button
-          className="w-full bg-gradient-to-r from-rose-gold to-warm-gold text-white hover:shadow-lg hover:shadow-rose-gold/30 h-11 gap-2 transition-all hover:scale-[1.02]"
+          className="w-full bg-gradient-to-r from-primary to-accent/90 text-primary-foreground hover:from-accent hover:to-gold h-12 gap-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/20 group/btn"
           onClick={() => addItem(product)}
         >
-          <ShoppingBag className="h-4 w-4" />
+          <ShoppingBag className="h-4 w-4 transition-transform group-hover/btn:scale-110" />
           {t("addToCart")}
         </Button>
       </CardFooter>
