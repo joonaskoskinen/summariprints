@@ -2,30 +2,23 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 import type { Product, CartItem } from "@/lib/types"
-import { products } from "@/lib/products"
-
-const FREE_SHIPPING_THRESHOLD = 40 // €40
-const SHIPPING_COST = 4.9 // €4.90
 
 interface CartContextType {
   items: CartItem[]
   addItem: (product: Product) => void
-  removeItem: (productId: number) => void
-  updateQuantity: (productId: number, quantity: number) => void
+  removeItem: (productId: number, size?: string) => void
+  updateQuantity: (productId: number, quantity: number, size?: string) => void
   clearCart: () => void
   totalItems: number
   totalPrice: number
-  subtotal: number
-  shippingCost: number
-  isFreeShipping: boolean
-  amountUntilFreeShipping: number
-  discountCode: string
-  discountAmount: number
-  applyDiscountCode: (code: string) => boolean
-  removeDiscountCode: () => void
   isOpen: boolean
   openCart: () => void
   closeCart: () => void
+  discountCode: string
+  applyDiscount: (code: string) => boolean
+  removeDiscount: () => void
+  subtotal: number
+  discountAmount: number
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined)
@@ -38,73 +31,72 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true)
-    try {
-      const savedCart = localStorage.getItem("summari-cart")
-      if (savedCart) {
-        setItems(JSON.parse(savedCart))
-      }
-      const savedDiscount = localStorage.getItem("summari-discount")
-      if (savedDiscount) {
-        setDiscountCode(savedDiscount)
-      }
-    } catch (error) {
-      console.error("Failed to load cart from localStorage:", error)
+    const savedCart = localStorage.getItem("summari-cart")
+    if (savedCart) {
+      setItems(JSON.parse(savedCart))
+    }
+    const savedDiscount = localStorage.getItem("summari-discount")
+    if (savedDiscount) {
+      setDiscountCode(savedDiscount)
     }
   }, [])
 
   useEffect(() => {
     if (mounted) {
-      try {
-        localStorage.setItem("summari-cart", JSON.stringify(items))
-      } catch (error) {
-        console.error("Failed to save cart to localStorage:", error)
-      }
+      localStorage.setItem("summari-cart", JSON.stringify(items))
     }
   }, [items, mounted])
 
   useEffect(() => {
     if (mounted) {
-      try {
-        if (discountCode) {
-          localStorage.setItem("summari-discount", discountCode)
-        } else {
-          localStorage.removeItem("summari-discount")
-        }
-      } catch (error) {
-        console.error("Failed to save discount to localStorage:", error)
+      if (discountCode) {
+        localStorage.setItem("summari-discount", discountCode)
+      } else {
+        localStorage.removeItem("summari-discount")
       }
     }
   }, [discountCode, mounted])
 
   const addItem = (product: Product) => {
     setItems((currentItems) => {
-      const existingItem = currentItems.find((item) => item.id === product.id)
+      const existingItem = currentItems.find(
+        (item) => item.id === product.id && item.selectedSize === product.selectedSize,
+      )
       if (existingItem) {
-        return currentItems.map((item) => (item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item))
+        return currentItems.map((item) =>
+          item.id === product.id && item.selectedSize === product.selectedSize
+            ? { ...item, quantity: item.quantity + 1 }
+            : item,
+        )
       }
       return [...currentItems, { ...product, quantity: 1 }]
     })
     setIsOpen(true)
   }
 
-  const removeItem = (productId: number) => {
-    setItems((currentItems) => currentItems.filter((item) => item.id !== productId))
+  const removeItem = (productId: number, size?: string) => {
+    setItems((currentItems) =>
+      currentItems.filter((item) => !(item.id === productId && (!size || item.selectedSize === size))),
+    )
   }
 
-  const updateQuantity = (productId: number, quantity: number) => {
+  const updateQuantity = (productId: number, quantity: number, size?: string) => {
     if (quantity <= 0) {
-      removeItem(productId)
+      removeItem(productId, size)
       return
     }
-    setItems((currentItems) => currentItems.map((item) => (item.id === productId ? { ...item, quantity } : item)))
+    setItems((currentItems) =>
+      currentItems.map((item) =>
+        item.id === productId && (!size || item.selectedSize === size) ? { ...item, quantity } : item,
+      ),
+    )
   }
 
   const clearCart = () => {
     setItems([])
-    setDiscountCode("")
   }
 
-  const applyDiscountCode = (code: string): boolean => {
+  const applyDiscount = (code: string): boolean => {
     if (code.toUpperCase() === "SUMMARI10") {
       setDiscountCode(code.toUpperCase())
       return true
@@ -112,7 +104,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     return false
   }
 
-  const removeDiscountCode = () => {
+  const removeDiscount = () => {
     setDiscountCode("")
   }
 
@@ -122,17 +114,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0)
 
   const subtotal = items.reduce((sum, item) => {
-    const product = products.find((p) => p.id === item.id)
-    const priceInEuros = (product?.priceInCents || 0) / 100
-    return sum + priceInEuros * item.quantity
+    return sum + item.priceInCents * item.quantity
   }, 0)
 
   const discountAmount = discountCode === "SUMMARI10" ? subtotal * 0.1 : 0
-
-  const isFreeShipping = subtotal >= FREE_SHIPPING_THRESHOLD
-  const shippingCost = isFreeShipping ? 0 : SHIPPING_COST
-  const amountUntilFreeShipping = Math.max(0, FREE_SHIPPING_THRESHOLD - subtotal)
-  const totalPrice = subtotal - discountAmount + shippingCost
+  const totalPrice = subtotal - discountAmount
 
   return (
     <CartContext.Provider
@@ -144,17 +130,14 @@ export function CartProvider({ children }: { children: ReactNode }) {
         clearCart,
         totalItems,
         totalPrice,
-        subtotal,
-        shippingCost,
-        isFreeShipping,
-        amountUntilFreeShipping,
-        discountCode,
-        discountAmount,
-        applyDiscountCode,
-        removeDiscountCode,
         isOpen,
         openCart,
         closeCart,
+        discountCode,
+        applyDiscount,
+        removeDiscount,
+        subtotal,
+        discountAmount,
       }}
     >
       {children}
