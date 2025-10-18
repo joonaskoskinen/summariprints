@@ -28,6 +28,7 @@ const translations: Record<Language, Translations> = {
     // Products
     productsTitle: "Kokoelmamme",
     addToCart: "Lisää Ostoskoriin",
+    startingFrom: "alkaen",
 
     // Product 1 - Pause for a Moment
     product1Name: "Pysähdy Hetkeksi",
@@ -152,6 +153,7 @@ const translations: Record<Language, Translations> = {
     // Products
     productsTitle: "Our Collection",
     addToCart: "Add to Cart",
+    startingFrom: "Starting from",
 
     // Product 1 - Pause for a Moment
     product1Name: "Pause for a Moment",
